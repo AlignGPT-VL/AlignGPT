@@ -1,0 +1,13 @@
+FROM pytorch/pytorch:2.1.2-cuda11.8-cudnn8-devel
+COPY . build
+RUN cd build && cp sources.list /etc/apt/sources.list && apt-get update && apt-get install -y python3-pip git libgl1
+RUN pip install -r requirements.txt -i https://mirrors.nju.edu.cn/pypi/web/simple/
+RUN cd .. && rm -rf build
+
+# it should be built: 
+# cd deploy
+# docker build -t aligngpt:1.0 .
+
+# then run:
+# cd ..
+# docker run --gpus all --ipc=host --network=host --rm -it -v .:/workspace aligngpt:1.0
