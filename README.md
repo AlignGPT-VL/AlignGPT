@@ -139,7 +139,7 @@ Before running the script of instruction tuning, you should set the argument `pr
 ## Evaluation
 
 We conduct evaluation on 12 benchmarks. The dataset to be evaluated is placed in `./playground/data/eval`. 
-Please download the `eval.zip` from Baidu Cloud Disk and unzip to `./playground/data/eval`. It contains custom annotations, scripts, and prediction files for AlignGPT. Here, we demonstrate how to evaluate the performance of our model on `MME` dataset. We use the following command to run the evaluation stage:
+Please download the `eval.zip` from Alibaba Cloud Disk and unzip to `./playground/data/eval`. It contains custom annotations, scripts, and prediction files for AlignGPT. Here, we demonstrate how to evaluate the performance of our model on `MME` dataset. We use the following command to run the evaluation stage:
 ```
 CUDA_VISIBLE_DEVICES=0 bash scripts/eval/mme.sh
 ```
