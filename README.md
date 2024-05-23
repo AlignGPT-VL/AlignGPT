@@ -67,7 +67,7 @@ pip install -r deploy/requirements.txt
 
 Please download the weights for LLM, Vision Backbone and place them in the `./playground/model` folder, we also provide all the weights for the AlignGPT checkpoint.
 
-| Model | LLM | Vision Backbone | Pre-training Checkpoint | Instruct-tuning Checkpoint | 
+| Model | LLM | Vision Backbone | Pre-training | Instruct-tuning | 
 |----------|----------|-----------|---|---|
 | AlignGPT-7B | [Vicuna 7B](https://huggingface.co/lmsys/vicuna-7b-v1.5) | [CLIP ViT-L/14](https://huggingface.co/openai/clip-vit-large-patch14-336) |[aligngpt-7b-pretrain](https://huggingface.co/nlpzhaof/aligngpt-7b-pretrain/tree/main)| [aligngpt-7b](https://huggingface.co/nlpzhaof/aligngpt-7b/tree/main)|
 | AlignGPT-13B | [Vicuna 13B](https://huggingface.co/lmsys/vicuna-13b-v1.5) | [CLIP ViT-L/14](https://huggingface.co/openai/clip-vit-large-patch14-336) |[aligngpt-13b-pretrain](https://huggingface.co/nlpzhaof/aligngpt-13b-pretrain/tree/main)| [aligngpt-13b](https://huggingface.co/nlpzhaof/aligngpt-13b/tree/main)|
