@@ -14,6 +14,7 @@ Authors: [Fei Zhao*](https://scholar.google.com/citations?user=V01xzWQAAAAJ&hl=z
 
 ## News and Updates
 - [5/24] 🔥 We released **AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability**.  Checkout the [paper](TODO) and [demo](TODO).
+- [5/24] 🔥 The data is not ready yet. We will upload it within a week.
 
 
 ## Contents
