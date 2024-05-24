@@ -25,37 +25,47 @@ Authors: [Fei Zhao*](https://scholar.google.com/citations?user=V01xzWQAAAAJ&hl=z
 - [Evaluation](#evaluation)
 - [Performance](#performance)
 
-## Install
-### Docker
+## install
+
+### docker
+
+We recommend to use docker to prepare the environment.
 
 1. Clone this repository and navigate to AlignGPT folder
+
 ```bash
 git clone https://github.com/AlignGPT-VL/AlignGPT.git
 cd AlignGPT
 ```
 
-2. Build the docker image with:
+2. Build the docker image
 
 ```bash
 cd deploy
 docker build -t aligngpt:1.0 .
 ```
 
-3. To start the container, run the following command in the project root directory:
+If your machine cannot connect to github to download the flash attention pip wheel, you can download it manually on https://github.com/Dao-AILab/flash-attention/releases/download/v2.5.5/flash_attn-2.5.5+cu118torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl and put it to `deploy/flash_attn-2.5.5+cu118torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl`.
+
+3. To start the container, run the following command in the project root directory
 
 ```bash
 docker run --gpus all --ipc=host --network=host --rm -it -v .:/workspace aligngpt:1.0
 ```
 
 More `-v` options can be added to mount the data and output directories.
+
 ### Conda
+
 1. Clone this repository and navigate to AlignGPT folder
+
 ```bash
 git clone https://github.com/AlignGPT-VL/AlignGPT.git
 cd AlignGPT
 ```
 
 2. Install Package
+
 ```Shell
 conda create -n aligngpt python=3.10 -y
 conda activate aligngpt
@@ -63,6 +73,8 @@ pip install --upgrade pip  # enable PEP 660 support
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
 pip install -r deploy/requirements.txt
 ```
+
+Finally, you need to install flash-attention manually before running the model.
 
 ## Model Zoo
 

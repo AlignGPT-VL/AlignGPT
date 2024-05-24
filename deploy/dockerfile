@@ -1,8 +1,25 @@
 FROM pytorch/pytorch:2.1.2-cuda11.8-cudnn8-devel
-COPY . build
-RUN cd build && cp sources.list /etc/apt/sources.list && apt-get update && apt-get install -y python3-pip git libgl1
+
+# Copy all files to the /build directory
+COPY . /build
+WORKDIR /build
+RUN chmod -R u+rwX,go+rX,go-w /build
+
+# Update sources list and install necessary packages
+RUN cp sources.list /etc/apt/sources.list && apt-get update && apt-get install -y python3-pip git libgl1
+
+# Install Python dependencies
 RUN pip install -r requirements.txt -i https://mirrors.nju.edu.cn/pypi/web/simple/
-RUN cd .. && rm -rf build
+
+# Install flash attention
+RUN if [ -e "flash_attn-2.5.5+cu118torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl" ]; then \
+    pip install flash_attn-2.5.5+cu118torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl; \
+    else \
+    pip install flash_attn==2.5.5 -i https://mirrors.nju.edu.cn/pypi/web/simple/; \
+    fi
+
+# Assign workdir
+WORKDIR /workspace
 
 # it should be built: 
 # cd deploy
