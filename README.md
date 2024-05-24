@@ -1,6 +1,6 @@
 
 # AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability
-[[Project Page](aligngpt-vl.github.io)] [[Paper](https://arxiv.org/abs/2405.14129)] [[Demo](http://47.116.173.89:7870/)] [[Model](https://huggingface.co/nlpzhaof)]
+[[Project Page](https://aligngpt-vl.github.io/)] [[Paper](https://arxiv.org/abs/2405.14129)] [[Demo](http://47.116.173.89:7870/)] [[Model](https://huggingface.co/nlpzhaof)]
 
 
 
