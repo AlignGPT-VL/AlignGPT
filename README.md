@@ -96,7 +96,7 @@ You can start gradio service with the following command:
 cd AlignGPT
 bash start_api.sh
 ```
-This script will launch three stagees: the controller, the Gradio web server, and the model worker, all of which will run in the background. You can view logs of these stage in folder `log/`.
+This script will launch three processes: the controller, the Gradio web server, and the model worker, all of which will run in the background. You can view logs of these processes in folder `log/`, and view process status with command `ps -ef | grep src.serve`.
 
 ### CLI Inference
 Chat about images using AlignGPT without the need of Gradio interface. 
