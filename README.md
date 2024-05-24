@@ -1,6 +1,6 @@
 
 # AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability
-[[Project Page](aligngpt-vl.github.io)] [[Paper]([TODO](https://arxiv.org/abs/2405.14129))] [[Demo](TODO)] [[Model](https://huggingface.co/nlpzhaof)]
+[[Project Page](aligngpt-vl.github.io)] [[Paper](https://arxiv.org/abs/2405.14129)] [[Demo](TODO)] [[Model](https://huggingface.co/nlpzhaof)]
 
 
 
@@ -13,7 +13,7 @@ Authors: [Fei Zhao*](https://scholar.google.com/citations?user=V01xzWQAAAAJ&hl=z
 <!-- ![architecture](./assert/architecture.png) -->
 
 ## News and Updates
-- [5/24] 🔥 We released **AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability**.  Checkout the [paper]([TODO](https://arxiv.org/abs/2405.14129)) and [demo](TODO).
+- [5/24] 🔥 We released **AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability**.  Checkout the [paper](https://arxiv.org/abs/2405.14129) and [demo](TODO).
 - [5/24] 🔥 The data is not ready yet. We will upload it within a week.
 
 
