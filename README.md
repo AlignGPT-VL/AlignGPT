@@ -25,9 +25,9 @@ Authors: [Fei Zhao*](https://scholar.google.com/citations?user=V01xzWQAAAAJ&hl=z
 - [Evaluation](#evaluation)
 - [Performance](#performance)
 
-## install
+## Install
 
-### docker
+### Docker
 
 We recommend to use docker to prepare the environment.
 
