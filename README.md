@@ -1,6 +1,6 @@
 
 # AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability
-[[Project Page](aligngpt-vl.github.io)] [[Paper](TODO)] [[Demo](TODO)] [[Model](https://huggingface.co/nlpzhaof)]
+[[Project Page](aligngpt-vl.github.io)] [[Paper]([TODO](https://arxiv.org/abs/2405.14129))] [[Demo](TODO)] [[Model](https://huggingface.co/nlpzhaof)]
 
 
 
@@ -13,7 +13,7 @@ Authors: [Fei Zhao*](https://scholar.google.com/citations?user=V01xzWQAAAAJ&hl=z
 <!-- ![architecture](./assert/architecture.png) -->
 
 ## News and Updates
-- [5/24] 🔥 We released **AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability**.  Checkout the [paper](TODO) and [demo](TODO).
+- [5/24] 🔥 We released **AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability**.  Checkout the [paper]([TODO](https://arxiv.org/abs/2405.14129)) and [demo](TODO).
 - [5/24] 🔥 The data is not ready yet. We will upload it within a week.
 
 
@@ -154,11 +154,13 @@ You should set the directories of the model checkpoints and datasets in the scri
 ## Citation
 If you find AlignGPT useful for your research and applications, please cite using this BibTeX:
 ```
-@article{AlignGPT2024,
-  author    = {Fei Zhao, Taotian Pang, Chunhui Li, Zhen Wu, Junjie Guo, Shangyu Xing, and Xinyu Dai},
-  title     = {AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability},
-  journal   = {arxiv},
-  year      = {2024},
+@misc{zhao2024aligngpt,
+      title={AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability}, 
+      author={Fei Zhao and Taotian Pang and Chunhui Li and Zhen Wu and Junjie Guo and Shangyu Xing and Xinyu Dai},
+      year={2024},
+      eprint={2405.14129},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 
