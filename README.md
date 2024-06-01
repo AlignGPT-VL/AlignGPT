@@ -168,7 +168,7 @@ python data_tools.py --dir path/to/datadir \
   
 It will convert the data to the zipped format and verify md5 checksums. Then unzip the files as usual.
 
-* **Dataset**: We conduct evaluation on 12 benchmarks. The dataset to be evaluated is placed in `./playground/data/eval`
+* **Dataset**: We conduct evaluation on 12 benchmarks.
 
 * **Run**: Here, we demonstrate how to evaluate the performance of our model on `MME` dataset. We use the following command to run the evaluation stage:
 ```
