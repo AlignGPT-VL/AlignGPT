@@ -108,10 +108,18 @@ python -m src.serve.cli \
 
 ## Training
 
-We place all training data in the `./playground/data` folder. Please download [aligngpt_pretrain_data]() from HuggingFace and place it in `./playground/data`. The details are introduced below.
+We place all training data in the `./playground/data` folder. Please download [aligngpt_pretrain_data](https://www.alipan.com/s/oZsvtBAFSry) from aliyupan and place it in `./playground/data`. The details are introduced below.
 
 ### Pre-training
-* **Dataset**: We use the 558K image-text pairs in the pre-training phase. Organize them in `./playground/data` as follows:
+* **Dataset**: We use the MP4 format to store the data as the storage provider has set restrictions on sharing zipped files. After downloading the data, run the following script:
+```
+wget https://raw.githubusercontent.com/starreeze/drin/main/dataset/data_tools.py
+python data_tools.py --dir path/to/datadir \
+    --raw_files aligngpt_eval_data.tar.xz aligngpt_pretrain_data.tar.xz \
+    --encoded_files eval.mp4 pretrain.mp4
+```
+  
+It will convert the data to the zipped format and verify md5 checksums. Then unzip the files as usual. We use the 558K image-text pairs in the pre-training phase. Organize them in `./playground/data` as follows:
 
 ```
 ├── LLaVA-Pretrain
@@ -151,7 +159,17 @@ Before running the script of instruction tuning, you should set the argument `pr
 
 ## Evaluation
 
-We conduct evaluation on 12 benchmarks. The dataset to be evaluated is placed in `./playground/data/eval`. Please download [aligngpt_eval_data]() from HuggingFace and place it in `./playground/data/eval`. It contains custom annotations, scripts, and prediction files for AlignGPT. Here, we demonstrate how to evaluate the performance of our model on `MME` dataset. We use the following command to run the evaluation stage:
+We conduct evaluation on 12 benchmarks. The dataset to be evaluated is placed in `./playground/data/eval`. Please download [aligngpt_eval_data](https://www.alipan.com/s/oZsvtBAFSry) from aliyupan and place it in `./playground/data/eval`. It contains custom annotations, scripts, and prediction files for AlignGPT. We use the MP4 format to store the data as the storage provider has set restrictions on sharing zipped files. After downloading the data, run the following script:
+```
+wget https://raw.githubusercontent.com/starreeze/drin/main/dataset/data_tools.py
+python data_tools.py --dir path/to/datadir \
+    --raw_files aligngpt_eval_data.tar.xz aligngpt_pretrain_data.tar.xz \
+    --encoded_files eval.mp4 pretrain.mp4
+```
+
+It will convert the data to the zipped format and verify md5 checksums. Then unzip the files as usual. 
+
+Here, we demonstrate how to evaluate the performance of our model on `MME` dataset. We use the following command to run the evaluation stage:
 ```
 CUDA_VISIBLE_DEVICES=0 bash scripts/eval/mme.sh
 ```
