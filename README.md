@@ -112,8 +112,8 @@ We place all training data in the `./playground/data` folder. Please download [a
 ```
 wget https://raw.githubusercontent.com/starreeze/drin/main/dataset/data_tools.py
 python data_tools.py --dir path/to/datadir \
-    --raw_files aligngpt_eval_data.tar.xz aligngpt_pretrain_data.tar.xz \
-    --encoded_files eval.mp4 pretrain.mp4
+    --raw_files aligngpt_pretrain_data.tar.xz \
+    --encoded_files pretrain.mp4
 ```
 It will convert the data to the zipped format and verify md5 checksums. Then unzip the files as usual.
 
@@ -162,8 +162,8 @@ We place all evaluation data in the `./playground/data/eval` folder. Please down
 ```
 wget https://raw.githubusercontent.com/starreeze/drin/main/dataset/data_tools.py
 python data_tools.py --dir path/to/datadir \
-    --raw_files aligngpt_eval_data.tar.xz aligngpt_pretrain_data.tar.xz \
-    --encoded_files eval.mp4 pretrain.mp4
+    --raw_files aligngpt_eval_data.tar.xz \
+    --encoded_files eval.mp4
 ```
   
 It will convert the data to the zipped format and verify md5 checksums. Then unzip the files as usual.
