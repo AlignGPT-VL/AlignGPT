@@ -14,7 +14,7 @@ Authors: [Fei Zhao*](https://scholar.google.com/citations?user=V01xzWQAAAAJ&hl=z
 
 ## News and Updates
 - [5/24] 🔥 We released **AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability**.  Checkout the [paper](https://arxiv.org/abs/2405.14129) and [demo](http://47.116.173.89:7870/).
-- [6/1] 🔥 We upload the training data and evaluation data to [aliyupan](https://www.alipan.com/s/oZsvtBAFSry).
+- [6/1] 🔥 Our [training data](https://www.alipan.com/s/oZsvtBAFSry) and [evaluation data](https://www.alipan.com/s/oZsvtBAFSry) are available now!
 
 
 ## Contents
