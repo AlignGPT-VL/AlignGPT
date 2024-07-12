@@ -15,7 +15,7 @@ Authors: [Fei Zhao*](https://scholar.google.com/citations?user=V01xzWQAAAAJ&hl=z
 ## News and Updates
 - [5/24] 🔥 We released **AlignGPT: Multi-modal Large Language Models with Adaptive Alignment Capability**.  Checkout the [paper](https://arxiv.org/abs/2405.14129) and [demo](http://47.116.173.89:7870/).
 - [6/01] 🔥 Our [training data](https://www.alipan.com/s/oZsvtBAFSry) and [evaluation data](https://www.alipan.com/s/oZsvtBAFSry) are available now!
-- [6/09] 🔥 We will release the AlignGPT family, which supports a variety of large language models and visual backbones.
+- [7/12] 🔥 We release the [AlignGPT_family](https://github.com/AlignGPT-VL/AlignGPT_family), which supports a variety of large language models and visual backbones.
 
 
 
